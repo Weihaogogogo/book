@@ -1,12 +1,12 @@
 {
-    "builds": [
-      {
-        "src": "docs/.vuepress/config.js",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "docs/.vuepress/dist",
-          "buildCommand": "vuepress build docs"
-        }
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "docs/.vuepress/dist",
+        "buildCommand": "vuepress build docs"
       }
-    ]
-  }
+    }
+  ]
+}
